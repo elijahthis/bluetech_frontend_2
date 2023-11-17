@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bower-Bold */
+@font-face {
+	font-family: "Bower-Bold";
+	src: url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.eot");
+	src: url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.eot?#iefix")
+			format("embedded-opentype"),
+		url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.woff2")
+			format("woff2"),
+		url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.woff")
+			format("woff"),
+		url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.ttf")
+			format("truetype"),
+		url("https://db.onlinewebfonts.com/t/40fccfffa7bc57048f06f7420d6fe7ae.svg#Bower-Bold")
+			format("svg");
+}
+
+/* McKinsey Sans */
+@font-face {
+	font-family: "McKinsey Sans";
+	src: url("../assets/fonts/McKinseySans-Regular.woff2") format("woff2");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: "McKinsey Sans";
+	src: url("../assets/fonts/McKinseySans-Medium.woff2") format("woff2");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "McKinsey Sans";
+	src: url("../assets/fonts/McKinseySans-Medium.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+*::selection {
+	background-color: #051c2c;
+	color: #ffffff;
+}
+
+body {
+	color: #1e1e1e;
+	font-family: "McKinsey Sans";
+	font-size: 18px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	color: #051c2c;
+	font-family: "Bower-Bold";
+}
+
+.hero-vid {
+	height: 100%;
+	width: 100vw;
+	object-fit: cover;
+	object-position: center;
+}
+
+.btn-loader {
+	-webkit-animation: spin 0.8s linear infinite; /* Safari */
+	animation: spin 0.8s linear infinite;
+	color: #ffffff;
+}
+
+.PhoneInputInput {
+	outline: none !important;
+}
+
+@media (max-width: 1024px) {
+	.hero-vid {
+		height: calc(100vh - 72px);
+	}
+}

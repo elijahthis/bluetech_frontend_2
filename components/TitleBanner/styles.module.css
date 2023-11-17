@@ -1,0 +1,11 @@
+.TitleBanner {
+	background-image: linear-gradient(rgba(5, 28, 44, 0.5), rgba(5, 28, 44, 0.5)),
+		url(../../assets/images/image\ 4.png);
+}
+.TitleBanner h1 {
+	color: #fff;
+	font-size: 40px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+}
